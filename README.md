@@ -7,9 +7,10 @@ To Add Z Gesture in your applicatino just copy CustomZGesture.h and CustomZGestu
 and following code to use that gesture.
 
 // Include CustomZGesture.h file
-#import "CustomZGesture.h"
+ #import "CustomZGesture.h"
 
 // Add the gesture Recognizer to the view
+
 CustomZGesture * zGesture = [[CustomZGesture alloc] initWithTarget:self action:@selector(gestureDetected:)];
 [self.view addGestureRecognizer:zGesture];
 [zGesture release];
