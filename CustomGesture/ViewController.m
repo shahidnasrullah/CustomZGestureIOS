@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CustomZGesture.h"
 
 @interface ViewController ()
 
@@ -17,13 +18,28 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [self.lblResult setText:@""];
+    
+    CustomZGesture * zGesture = [[CustomZGesture alloc] initWithTarget:self action:@selector(gestureDetected:)];
+    [self.view addGestureRecognizer:zGesture];
+    [zGesture release];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)dealloc {
+    [_lblResult release];
+    [super dealloc];
+}
+
+-(void) gestureDetected:(UIGestureRecognizer*) sender
+{
+    [self.lblResult setText:@"Z Gesture Detected"];
+    [self.lblResult performSelector:@selector(setText:) withObject:@"" afterDelay:2];
 }
 
 @end
