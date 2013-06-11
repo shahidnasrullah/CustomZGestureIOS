@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  CustomGesture
 //
-//  Created by Adil Soomro on 11/06/2013.
+//  Created by Shahid Nasrullah on 11/06/2013.
 //  Copyright (c) 2013 Shahid Nasrullah. All rights reserved.
 //
 

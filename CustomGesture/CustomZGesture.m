@@ -2,7 +2,7 @@
 //  CustomZGesture.m
 //  Medipad
 //
-//  Created by Adil Soomro on 04/06/2013.
+//  Created by Shahid Nasrullah on 04/06/2013.
 //
 //
 
